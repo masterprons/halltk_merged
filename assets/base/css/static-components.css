@@ -1,0 +1,364 @@
+
+/*(1)=====================================================================|| HEADINGS ||===============================================================*/
+
+h1, h2, h3, h4, h5, h6{font-weight: lighter;}
+h1{font-size: 30px;}
+h2{font-size: 21px;}
+h3{font-size: 18px;}
+h4{font-size: 16px;}
+h5{font-size: 12px;}
+h6{font-size: 9px;}
+
+/*(2)====================================================================|| HEADING BOX ||=============================================================*/
+
+/*General Heading Box:---------------------------------------------(HB1)>*/
+.heading-box-general{
+    max-width: 100%; 
+    height:auto; 
+    padding: 2px; 
+    border: solid 2px #000; 
+    border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+}
+
+/*General Heading Box:---------------------------------------------(HB1)>*/
+.heading-border-left {}
+
+/*General Heading Box:---------------------------------------------(HB1)>*/
+
+
+/*(3)================================================================|| PARAGRAPH : Columns||==========================================================*/
+
+p {padding: 7px; font-size: 16px;}                                                                                                           /*Delete*/
+
+/*2 Column Paragraph:-----------------------------(HB1)>*/
+.para-2-columns {
+    column-count: 2;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+}
+/*3 Column Paragraph:-----------------------------(HB1)>*/
+.para-3-columns {
+    column-count: 3;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+}
+/*4 Column Paragraph:-----------------------------(HB1)>*/
+.para-4-columns {
+    column-count: 4;
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+}
+/*5 Column Paragraph:-----------------------------(HB1)>*/
+.para-5-columns {
+    column-count: 5;
+    -webkit-column-count: 5; /* Chrome, Safari, Opera */
+    -moz-column-count: 5; /* Firefox */
+}
+
+/*(3)============================================================|| PARAGRAPH : Rule Columns||=========================================================*/
+
+p {padding: 7px; font-size: 16px;}
+
+/*2 Column Paragraph:-----------------------------(HB1)>*/
+.para-2-rule-columns {
+    column-count: 2;
+    column-rule: solid 1px lightsteelblue;
+    column-gap: 45px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -webkit-column-rule: solid 1px lightsteelblue;/* Chrome, Safari, Opera */
+    -webkit-column-gap: 45px;/* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    -moz-column-rule: solid 1px lightsteelblue;/* Firefox */
+    -moz-column-gap: 45px;/* Firefox */
+}
+/*3 Column Paragraph:-----------------------------(HB1)>*/
+.para-3-rule-columns {
+    column-count: 3;
+    column-rule: solid 1px lightsteelblue;
+    column-gap: 45px;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -webkit-column-rule: solid 1px lightsteelblue;/* Chrome, Safari, Opera */
+    -webkit-column-gap: 45px;/* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    -moz-column-rule: solid 1px lightsteelblue;/* Firefox */
+    -moz-column-gap: 45px;/* Firefox */
+}
+/*4 Column Paragraph:-----------------------------(HB1)>*/
+.para-4-rule-columns {
+    column-count: 4;
+    column-rule: solid 1px lightsteelblue;
+    column-gap: 45px;
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -webkit-column-rule: solid 1px lightsteelblue;/* Chrome, Safari, Opera */
+    -webkit-column-gap: 45px;/* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    -moz-column-rule: solid 1px lightsteelblue;/* Firefox */
+    -moz-column-gap: 45px;/* Firefox */
+}
+/*5 Column Paragraph:-----------------------------(HB1)>*/
+.para-5-rule-columns {
+    column-count: 5;
+    column-rule: solid 1px lightsteelblue;
+    column-gap: 45px;
+    -webkit-column-count: 5; /* Chrome, Safari, Opera */
+    -webkit-column-rule: solid 1px lightsteelblue;/* Chrome, Safari, Opera */
+    -webkit-column-gap: 45px;/* Chrome, Safari, Opera */
+    -moz-column-count: 5; /* Firefox */
+    -moz-column-rule: solid 1px lightsteelblue;/* Firefox */
+    -moz-column-gap: 45px;/* Firefox */
+}
+/* BREAKING POINTS : PARAGRAPH AND COLUMNS OOOOOOOOOOOOOOOOOOOOOOOOOOOC-------> */
+
+@media screen and (max-width:800px){
+    .para-5-columns, .para-5-rule-columns{
+        column-count: 4; -webkit-column-count: 4;-moz-column-count: 4;
+    }
+}
+@media screen and (max-width:700px){
+    .para-4-columns, .para-4-rule-columns, .para-5-columns, .para-5-rule-columns {
+        column-count: 3; -webkit-column-count: 3;-moz-column-count: 3;
+    }
+}
+@media screen and (max-width:500px){
+    .para-2-columns, .para-2-rule-columns, .para-3-columns, .para-3-rule-columns, .para-4-columns, .para-4-rule-columns, .para-5-columns, 
+    .para-5-rule-columns {
+        column-count: 2; -webkit-column-count: 2;-moz-column-count: 2;
+    }
+}
+@media screen and (max-width:400px){
+    .para-2-columns, .para-2-rule-columns, .para-3-columns, .para-3-rule-columns, .para-4-columns, .para-4-rule-columns, .para-5-columns, 
+    .para-5-rule-columns {
+        column-count: 1; -webkit-column-count: 1;-moz-column-count: 1;
+    }
+}
+
+/*(4)==========================================================|| PARAGRAPH COLUMN AND IMAGES ||=======================================================*/
+
+.para-columns-img {max-width:225px; width:96%; height:auto; margin:auto; display: block; padding: 9px;}
+
+
+/*(4)==================================================================|| PARAGRAPH BOX ||=============================================================*/
+
+.para-box {width:98%; height: auto; padding: 7px 0.5%; margin: 7px 0.5%; border-color: lightgray; box-sizing: border-box;}
+/*Para Box Common:-----------------------------(HB1)>*/
+.pbox-solid-1 {border: lightgray solid 1px;}
+.pbox-solid-2 {border: lightgray solid 2px;}
+.pbox-solid-3 {border: lightgray solid 3px;}
+.pbox-solid-4 {border: lightgray solid 4px;}
+.pbox-solid-5 {border: lightgray solid 5px;}
+
+.pbox-double-1 {border: lightgray double 1px;}
+.pbox-double-2 {border: lightgray double 2px;}
+.pbox-double-3 {border: lightgray double 3px;}
+.pbox-double-4 {border: lightgray double 4px;}
+.pbox-double-5 {border: lightgray double 5px;}
+
+.pbox-dotted-1 {border: lightgray dotted 1px;}
+.pbox-dotted-2 {border: lightgray dotted 2px;}
+.pbox-dotted-3 {border: lightgray dotted 3px;}
+.pbox-dotted-4 {border: lightgray dotted 4px;}
+.pbox-dotted-5 {border: lightgray dotted 5px;}
+
+.pbox-ridge-1 {border: lightgray ridge 1px;}
+.pbox-ridge-2 {border: lightgray ridge 2px;}
+.pbox-ridge-3 {border: lightgray ridge 3px;}
+.pbox-ridge-4 {border: lightgray ridge 4px;}
+.pbox-ridge-5 {border: lightgray ridge 5px;}
+
+.pbox-groove-1 {border: lightgray groove 1px;}
+.pbox-groove-2 {border: lightgray groove 2px;}
+.pbox-groove-3 {border: lightgray groove 3px;}
+.pbox-groove-4 {border: lightgray groove 4px;}
+.pbox-groove-5 {border: lightgray groove 5px;}
+
+.pbox-dashed-1 {border: lightgray dashed 1px;}
+.pbox-dashed-2 {border: lightgray dashed 2px;}
+.pbox-dashed-3 {border: lightgray dashed 3px;}
+.pbox-dashed-4 {border: lightgray dashed 4px;}
+.pbox-dashed-5 {border: lightgray dashed 5px;}
+
+.pbox-outset-1 {border: lightgray outset 1px;}
+.pbox-outset-2 {border: lightgray outset 2px;}
+.pbox-outset-3 {border: lightgray outset 3px;}
+.pbox-outset-4 {border: lightgray outset 4px;}
+.pbox-outset-5 {border: lightgray outset 5px;}
+
+.pbox-inset-1 {border: lightgray inset 1px;}
+.pbox-inset-2 {border: lightgray inset 2px;}
+.pbox-inset-3 {border: lightgray inset 3px;}
+.pbox-inset-4 {border: lightgray inset 4px;}
+.pbox-inset-5 {border: lightgray inset 5px;}
+
+
+/*Para Box Left Border:-----------------------------(HB1)>*/
+.pbox-solid-left-6 {border: solid lightgray 1px; border-left: solid #000 6px;}
+
+/*(5)===================================================================|| BOX SHADOWS ||==============================================================*/
+/*Box Shadow : Common -----------------------------(HB1)>*/
+
+.box-shadow {box-sizing: border-box;}
+.box-shadow0040 {box-shadow: 0px 0px 4px 0px lightgray;}
+.box-shadow0050 {box-shadow: 0px 0px 5px 0px lightgray;}
+.box-shadow0070 {box-shadow: 0px 0px 7px 0px lightgray;}
+.box-shadow0090 {box-shadow: 0px 0px 9px 0px lightgray;}
+
+
+
+
+/*(6)==================================================================|| IMAGE THUMBS ||==============================================================*/
+
+
+
+/*(9)===============================================================|| IMAGE HOVER EFFECTS ||==========================================================*/
+
+/*(13)===========================================================|| IMAGE HOVER ANIMATION :JS ||=======================================================*/
+
+
+/*(15)================================================================|| TABLE : BASIC ||==============================================================*/
+/*(16)===============================================================|| TABLE : EVEN/ODD ||============================================================*/
+/*(17)=================================================================|| LISTS : HTML ||==============================================================*/
+/*(18)================================================================|| LISTS PATTERNS ||=============================================================*/
+/*(19)==============================================================|| LISTS WITH SPRITES ||===========================================================*/
+
+/*(22)=================================================================|| YOUTUBE VIDEO ||=============================================================*/
+
+.youtube-video {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+
+.youtube-video iframe, .youtube-video object, .youtube-video embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+/*(23)============================================================|| INPUT : DROP DOWN LIST ||=========================================================*/
+/*(24)===============================================================|| INPUT : TEXTAREA ||============================================================*/
+/*(23)============================================================|| INPUT : SEARCH BAR ||=========================================================*/
+/*Search Bar Common:-----------------------------(HB1)>*/
+.search-bar-common {width:40%; height: 27px; border: inset 1px lightgray; margin: auto;}
+.btn-search-default {width: 75px; height: 27px; border: inset 1px lightgray;}
+/*(25)===============================================================|| BUTTONS : DEFAULT ||===========================================================*/
+/*Input Button: ----------------------------------(Button 1)>*/
+
+/*Tag Button: ------------------------------------(Button 2)>*/
+
+/*(25)================================================================|| BUTTONS : HOVER ||============================================================*/
+/*BBInput: ---------------------------------------(Button 3)>*/
+
+/*(26)===============================================================|| ANIMATED BUTTONS ||============================================================*/
+
+/*Ripple Button:----------------------------------(Button 4)>*/
+.btn-ani-ripple {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-ani-ripple:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.btn-ani-ripple:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+/*Ani Span Button: -------------------------------(Button 5)>*/
+.btn-ani-span {}
+
+/*3D Press Button: -------------------------------(Button 6)>*/
+.btn-3d-press {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.btn-3d-press:hover {background-color: #3e8e41}
+
+.btn-3d-press:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+/*3D Circle Press Button: ------------------------(Button 7)>*/
+.btn-circle-press {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%; -moz-border-radius: 100%; -webkit-border-radius: 100%;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    box-shadow: 0 9px #999;
+}
+
+.btn-circle-press:hover {background-color: #3e8e41}
+
+.btn-circle-press:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/*(27)===============================================================|| FIELDSET ||=============================================================*/
+/*Basic Fieldset Effects: ------------------------(Fieldset 1)>*/
+.fieldset {width: 96%; padding: 1%; margin: 1%; height: auto;}
+.legend {}
+
+
+
+/*(7)================================================================|| IMAGE THUMB WITH H ||==========================================================*/
+
+
+/*(8)===============================================================|| IMAGE THUMB WITH H, P ||========================================================*/
+
+
+/*(10)=============================================================|| IMAGE HOVER ANIMATION ||==========================================================*/
+/*(10)=========================================================|| IMAGE HOVER ANIMATION : H2/H3 ||======================================================*/
+/*(10)===================================================|| IMAGE HOVER ANIMATION : H2/H3 & PARAGRAPH ||================================================*/
+/*(20)===============================================================|| CONTENT PANEL H, P ||===========================================================*/
+/*(21)============================================================|| CONTENT PANEL H, P, IMG ||=========================================================*/
+/*(14)=================================================================|| IMAGE PANELS ||==============================================================*/

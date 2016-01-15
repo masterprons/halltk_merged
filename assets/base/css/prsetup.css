@@ -1,0 +1,507 @@
+/*==================================================================|| BASE ELEMENTS ||=================================================================*/
+
+html { font-family: sans-serif;}
+body {
+    background-color: #fff;
+    margin: 0px; 
+    padding: 0px;
+}
+html, body{max-width: 100%; height:auto;}
+
+* { margin:0px; padding:0px; }
+
+/*=====================================================================|| LAYOUT ||=====================================================================*/
+.wrapper {width: 100%; height: auto;}
+
+header {
+    height: 45px;
+    width: 98%;
+    color: #000;
+    padding:5px 1% 1px 1%;
+}
+
+nav {}
+
+.container {
+
+}
+section{
+    
+}
+
+.left_aside {
+
+}
+
+.right_aside {
+
+}
+
+footer {
+    padding: 1%;
+    color: #ffffff;
+}
+
+
+/*============================================================|| LAYOUT'S STRUCTURE & DESIGN ||=========================================================*/
+
+/*=====================================================================|| COMPONENTS ||=================================================================*/
+// Close Box -------------------------------------------------------------------------------------------------------------------------------------------
+
+.close-box {
+    font-family: sans-serif;
+    font-size: 14px;
+    border: solid 1px gray;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: red;
+    background-color: #ffffff;
+}
+.close-box:hover {
+    background-color: lightgray;
+    color:#ff0000;
+}
+
+// NavBar --------------------------------------------------------------------------------------------------------------------------------------
+
+
+.navbar ul {
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+    border-bottom: solid 1px lightgray;
+}
+
+ul#navbar li a:hover {
+    background-color: #FFFFCC;
+}
+
+//Horizontal Nav Bar ----------------------------------------------------------------------------------------------------------------------------------
+
+.horizontal-nav {
+background: #efefef;
+border-radius: 6px;
+}
+.horizontal-nav ul {
+    background: #128F9A;
+    float: left;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #0e7079;
+    list-style-type: none;
+}
+.horizontal-nav ul li {
+    float: left;
+    border-left: 1px solid #0e7079;
+}
+.horizontal-nav ul li:first-child {
+    border-left: 0 none;
+}
+.horizontal-nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255, 0.25);
+    border-left: 1px solid rgba(255,255,255, 0.25);
+}
+.horizontal-nav ul li:first-child a {
+    border-left: 0 none;
+}
+.horizontal-nav ul li a:hover {
+    background: #12808a;
+}
+.horizontal-nav ul li:first-child a {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.horizontal-nav ul li:last-child a {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+//NavBar Collaspsable (Responsive) ---------------------------------------------------------------------------------------------------------------------
+
+body{ -webkit-animation: bugfix infinite 1s; }
+/*Required functional CSS don't change this bit */
+
+.mainMenu {display:block; position:relative; width:100%;margin:0; padding:0;float:left;}
+#toggleMenu {display: none;}
+#toggleMenu:checked ~ ul {max-height:100%; /*Make page height*/ opacity:1;}	
+.mainMenu > ul {width:100%; margin:0;padding:0; list-style:none; float:left; overflow-y: hidden; max-height:0;}
+
+.mainMenu li {margin:0;	padding:0; white-space:nowrap; display:block; width:100%; float:left;}
+
+.mainMenu a, .mainMenu a:visited {display:block; width:100%; /*required to make whole element clickable*/ }
+
+label.menuTitle {margin:0; display:block; cursor:pointer; background: url('../images/navbar/menu.png'); background-image: url('../images/navbar/menu.svg'), none; 
+                 background-repeat: no-repeat;background-position: 97% 10px; background-size: 24px 19px; /*Make same size as your menu.png*/ }
+
+@media screen and (min-width:768px) {
+    label.menuTitle {display:none;}	
+    .mainMenu ul {display:block!important; border:0; overflow:visible; max-height:100%!important;}
+    .mainMenu ul li {width:auto; display:inline; border:0;}
+}	
+/* Child CSS Functionality - do not change*/
+.mainMenu > ul ul {float:left; width:100%; margin:0; padding:0;}
+
+@media screen and (min-width:768px) {
+    .mainMenu > ul > li {position: relative;}
+    .mainMenu > ul > li:hover ul {display: block!important;}
+    .mainMenu > ul ul {display:none!important; position: absolute; left:0;}
+    .mainMenu > ul ul li {display: block; width:100%; float:left; padding:0; margin:0; }
+    .mainMenu .toggleChildren {display:none!important;}
+}
+/*End Child CSS Functionality*/
+
+/*Menu Styling CSS - change the below to suit your site!*/
+.mainMenu {
+    border-bottom:1px solid #ccc;
+}
+
+.mainMenu li {
+    border-top:1px solid #ccc;
+}
+
+.mainMenu a, .mainMenu a:visited {
+    color:#333;
+    text-decoration:none;
+    width:94%; /*Use 100% and box-sizing if not supporting ie7*/
+    padding:5px 3%;
+    background: none;
+}
+
+label.menuTitle {
+    font-size:20px;
+    width:94%;  /*Use 100% and box-sizing if not supporting ie7*/
+    padding:6px 3%;
+    font-weight:bold;
+}
+
+@media screen and (min-width:768px) {
+    .mainMenu li {
+        border:0;
+    }	
+    .mainMenu a:hover  {
+        color:#767676;
+    }
+    .mainMenu a, .mainMenu a:visited {
+        padding:10px 3px 10px 8px;
+    }
+}
+
+/*Menu Child Styling*/
+.mainMenu .toggleChildren {
+    float:right;
+    margin-right:3%;
+    width:30px; /*Note width is required */
+    height:30px; /*Customise to your menu height*/
+    padding:0;
+    display:block;
+    background:url(../images/navbar/nav-arrow.png) no-repeat center center;
+    background-size: 11px 8px; 
+}
+
+.mainMenu .toggleChildren.contract {
+    background:url(../images/navbar/nav-arrow.png) no-repeat center center;
+    background-size: 11px 8px; 
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
+.mainMenu > ul ul a, .mainMenu > ul ul a:visited {
+    background:#eee;
+}
+
+@media screen and (min-width:768px) {
+    .mainMenu > ul > li:hover > a {
+        color:#767676;
+    }
+    .mainMenu > ul ul {
+        top:38px; /*height of your main nav*/
+        min-width:260px; /*Set your width*/
+    }
+    .mainMenu > ul ul a {
+        border:0;
+        border-bottom:1px solid #ccc;
+    }
+}
+/*End Menu Child Styling*/
+
+//SLIDEBAR ---------------------------------------------------------------------------------------------------------------------------------------------
+
+html, body, #sb-site, .sb-site-container, .sb-slidebar {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.sb-site-container, .sb-slidebar {margin: 0px; padding: 0px;}
+
+//html, body {
+//	width: 100%;
+//	overflow-x: hidden; /* Stops horizontal scrolling. */
+//}
+
+html {
+	height: 100%; /* Site is as tall as device. */
+}
+
+/*body {position: relative;  Required for static Slidebars to function properly. }*/
+
+/* Site scroll locking - prevent site from scrolling when a Slidebar is open, except when static Slidebars are only available. */
+html.sb-scroll-lock.sb-active:not(.sb-static) {overflow: hidden;}
+
+/* ---------- * 002 - Site */
+
+#sb-site, .sb-site-container {
+	/* You may now use class .sb-site-container instead of #sb-site and use your own id. However please make sure you don't set any of 
+           the following styles any differently on your id. */
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	z-index: 1; /* Site sits above Slidebars */
+	background-color: #ffffff; 
+        /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. 
+           Making this transparent will allow the Slidebars beneath to be visible. */
+}
+
+/* Micro clearfix by Nicolas Gallagher, ensures the site container hits the top and bottom of the screen. */
+#sb-site:before, #sb-site:after, .sb-site-container:before, .sb-site-container:after {
+	content: ' ';
+	display: table;
+}
+#sb-site:before, #sb-site:after, .sb-site-container:before, .sb-site-container:after {clear: both;}
+/* ---------------  003 - Slidebars  */
+
+.sb-slidebar {
+	height: 100%;
+	overflow-y: auto; /* Enable vertical scrolling on Slidebars when needed. */
+	position: fixed;
+	top: 0;
+	z-index: 0; /* Slidebars sit behind sb-site. */
+	display: none; /* Initially hide the Slidebars. Changed from visibility to display to allow -webkit-overflow-scrolling. */
+	background-color: #222222; /* Default Slidebars background colour, overwrite this with your own css. */
+}
+
+.sb-slidebar, .sb-slidebar * {
+	-webkit-transform: translateZ( 0px ); /* Fixes issues with translated and z-indexed elements on iOS 7. */
+}
+
+.sb-left {
+	left: 0; /* Set Slidebar to the left. */
+}
+
+.sb-right {
+	right: 0; /* Set Slidebar to the right. */
+}
+
+html.sb-static .sb-slidebar,
+.sb-slidebar.sb-static {
+	position: absolute; /* Makes Slidebars scroll naturally with the site, and unfixes them for Android Browser < 3 and iOS < 5. */
+}
+
+.sb-slidebar.sb-active {
+	display: block; /* Makes Slidebars visibile when open. Changed from visibility to display to allow -webkit-overflow-scrolling. */
+}
+
+.sb-style-overlay {
+	z-index: 9999; /* Set z-index high to ensure it overlays any other site elements. */
+}
+
+.sb-momentum-scrolling {
+	-webkit-overflow-scrolling: touch; /* Adds native momentum scrolling for iOS & Android devices. */
+}
+
+/* Slidebar widths for browsers/devices that don't support media queries. */
+	.sb-slidebar {
+		width: 30%;
+	}
+	
+	.sb-width-thin {
+		width: 15%;
+	}
+	
+	.sb-width-wide {
+		width: 45%;
+	}
+
+@media (max-width: 480px) { /* Slidebar widths on extra small screens. */
+	.sb-slidebar {
+		width: 70%;
+	}
+	
+	.sb-width-thin {
+		width: 55%;
+	}
+	
+	.sb-width-wide {
+		width: 85%;
+	}
+}
+
+@media (min-width: 481px) { /* Slidebar widths on small screens. */
+	.sb-slidebar {
+		width: 55%;
+	}
+	
+	.sb-width-thin {
+		width: 40%;
+	}
+	
+	.sb-width-wide {
+		width: 70%;
+	}
+}
+
+@media (min-width: 768px) { /* Slidebar widths on medium screens. */
+	.sb-slidebar {
+		width: 40%;
+	}
+	
+	.sb-width-thin {
+		width: 25%;
+	}
+	
+	.sb-width-wide {
+		width: 55%;
+	}
+}
+
+@media (min-width: 992px) { /* Slidebar widths on large screens. */
+	.sb-slidebar {
+		width: 30%;
+	}
+	
+	.sb-width-thin {
+		width: 15%;
+	}
+	
+	.sb-width-wide {
+		width: 45%;
+	}
+}
+
+@media (min-width: 1200px) { /* Slidebar widths on extra large screens. */
+	.sb-slidebar {
+		width: 20%;
+	}
+	
+	.sb-width-thin {
+		width: 5%;
+	}
+	
+	.sb-width-wide {
+		width: 35%;
+	}
+}
+
+/* --------------- 004 - Animation */
+
+.sb-slide, #sb-site, .sb-site-container, .sb-slidebar {
+	-webkit-transform: translate( 0px );
+	   -moz-transform: translate( 0px );
+	     -o-transform: translate( 0px );
+	        transform: translate( 0px );
+	
+	-webkit-transition: -webkit-transform 400ms ease;
+	   -moz-transition:    -moz-transform 400ms ease;
+	     -o-transition:      -o-transform 400ms ease;
+	        transition:         transform 400ms ease;
+	
+	-webkit-transition-property: -webkit-transform, left, right; /* Add left/right for Android < 4.4. */
+	-webkit-backface-visibility: hidden; /* Prevents flickering. This is non essential, and you may remove it if your having problems with fixed background images in Chrome. */
+}
+
+/* -------------------- 005 - Helper Classes */
+.sb-hide {display: none; /* Optionally applied to control classes when Slidebars is disabled over a certain width. */}
+/*============================================================|| PRESENTATIONAL ELEMENTS ||=============================================================*/
+article {
+    background-color: lightgray;
+    padding:4px;
+}
+p {
+    color: #000000;
+    margin: 9px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+h1, h2, h3 {padding:9px;}
+h4, h5, h6 {}
+
+h1 {
+    font-size: 40px;
+    color:#000000;
+    margin:auto;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h2 {font-size: 30px; color:#000000;}
+h3 {font-size: 20px; color:#000000;}
+h4 {font-size: 16px;}
+h5 {font-size: 12px; color:#000000;}
+h6 {font-size: 8px; color:#000000;}
+
+img {}
+
+a {color:lightblue; text-decoration: none;}
+a:hover {color:blue;}
+
+fieldset {}
+legend {}
+
+hr {}
+
+
+
+/*=================================================================|| UTILITY CLASSES ||=================================================================*/
+
+/*POSITIONING*/
+.float-left {float:left;}
+.float-right {float:right;}
+.center{margin-left: auto; margin-right: auto;}
+.border-all{border: 2px #0e7079 ridge; width: auto;}
+
+/*ADVERTISEMENTS*/
+.adbox-728x90, .adbox-300x250 {background-color: #ccf5ff; border: 1px #cccccc outset;}
+.adbox-300x250 {width: 300px; height: 250px; margin: 5px auto;} /* Ad size: 300 x 250*/
+.adbox-728x90 {width: 728px; height: 90px; margin: 5px auto;} /* Ad size: 728 x 90*/
+
+
+/*=================================================================|| BREAKING POINTS ||=================================================================*/
+
+@media screen and (max-width:1150px){
+    .ad-space-right {width: 100%;}
+    .ad-space-manager {width: 32.3333%; padding: 0.5%; float: left;}
+    section {width: 100%;}
+}
+
+@media screen and (max-width:940px){
+    .ad-space-manager {width: 48%; padding: 1%;}
+    #ad3 {display: none;}
+}
+
+@media screen and (max-width:850px){
+    .adbox-728x90 {width: 460px; height:60px;}/* Leader Board ad size converted to Full Banner ad */
+}
+
+@media screen and (max-width:630px){
+    .ad-space-manager {width: 98%; padding: 1%;}
+    .thumb {width:18%; padding: 5px 1%;}
+}
+
+@media screen and (max-width: 540px){
+    .adbox-728x90 {width: 234px; height:60px;}/* Full Banner ad size converted to Half Banner ad */
+}
