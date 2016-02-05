@@ -1,0 +1,71 @@
+@charset "utf-8";
+body { background-color: #D5D5D5; font-family: Arial, Helvetica, sans-serif; }
+h1 {}
+h2 { font-size: 18px; padding: 2px; font-weight: 400}
+h3 { font-size: 30px; padding: 9px; text-align: center;}
+* { margin: 0px; padding: 0px; box-sizing: border-box;}
+a:link, a:visited, a:hover, a:active { text-decoration: none; }
+
+#wrapper {
+    float: left;
+    width: 96%;
+    margin: 10px 2%;
+    box-shadow: 0px 0px 15px #000;
+    -webkit-box-shadow: 0px 0px 15px #000;
+    -moz-box-shadow: 0px 0px 15px #000;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    background-color: #F2F5F2;
+}
+header, footer { width: 100%;float: left; height: auto; background-color: #00CCFF; }
+header { border-radius: 10px 10px 0px 0px; -moz-border-radius: 10px 10px 0px 0px; -webkit-border-radius: 10px 10px 0px 0px; }
+#content-panel { background-color: #ECECEC; float: left; width: 75%; }
+footer { box-shadow: 0px 0px 15px #FFFFFF; border-radius: 0px 0px 10px 10px; -moz-border-radius: 0px 0px 10px 10px; 
+         -webkit-border-radius: 0px 0px 10px 10px; height: 50px;}
+
+section {float: left; width: 100%; padding: 2px 15px;}
+.url_intro { float: left; width: 100%; }
+h1, .url_intro p {float: left; width: 50%; height: 40px; padding: 7px 5px; margin: 5px auto; background-color: #FFF; border-left: solid 5px lightgray;}
+.url_intro p { padding-top: 10px; margin-left: 1%; width: 49%; font-size: 12px;}
+#site-embed { float: left; width: 100%; margin: 10px auto;}
+.site { box-shadow: 0px 0px 20px #000000; float: left; height: 600px; width: 100%; }
+.text-center-in-gray {color: gray; text-align: center; padding: 4px;}
+#indexUrl { background-color: #DCDCDC; float: left; width: 98%; margin: 10px 1%; }
+#indexUrl h3 { font-size: 20px; padding: 7px; margin: 5px auto;}
+#indexUrl ul { display: block; width: 96%; height: auto; margin: auto 2%; float: left; padding: 10px; }
+#indexUrl ul li { list-style-type: none; float: left; width: 20%;}
+#indexUrl ul li a {
+    text-decoration: none;
+    width: 98%;
+    float: left;
+    background-color: #CCFFFF;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 3px 1px #006173;
+    -webkit-box-shadow: 0px 0px 3px 1px #006173;
+    -moz-box-shadow: 0px 0px 3px 1px #006173;
+    color: #330000;
+    text-align: center;
+    padding: 7px 10px;
+    font-size: 16px;
+    margin: 5px 1%;
+}
+#indexUrl ul li a:hover { background-color: #FFDFFF; box-shadow: 1px 1px 8px #CC3399; -webkit-box-shadow: 1px 1px 8px #CC3399; -moz-box-shadow: 1px 1px 8px #CC3399; }
+
+/*===================================================================|| BREAKING POINTS ||=============================================================*/
+
+@media screen and (max-width: 999px){
+    #indexUrl ul li {width: 25%;}
+    h1, .url_intro p {width: 100%; margin-left: 0px; margin-right: 0px; }
+}
+@media screen and (max-width: 799px){
+    #indexUrl ul li {width: 33.33%;}
+}
+@media screen and (max-width: 675px){
+    #indexUrl ul li {width: 50%;}
+}
+@media screen and (max-width: 400px){
+    #indexUrl ul li {width: 100%;}
+}

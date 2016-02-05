@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #000000;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+        color: #FFFFFF; 
+        font-family: Arial, Helvetica, sans-serif; 
+}
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
+p {padding: 8px; font-size: 12px; color: lightgray; text-align: right;}
+
+#wrapper {
+	float: left;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+	box-shadow: 0px 0px 10px #FFF;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	background-color: #000000;
+        background-image: url('http://1.bp.blogspot.com/-1HN2p6aNOgI/UjBktDnqLlI/AAAAAAAABBk/iMZunpxKm3g/s1600/horror+wallpapers+%283%29.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+}
+
+#container { float: left; width: 100%; padding: 15px; }
+
+#header { float: left; width: 100%; text-align: center; font-size: 35px; font-weight: bold; text-shadow: 1px 3px 22px red; background-color: #001;
+          padding: 5px; border-radius: 10px 10px 0px 0px; -webkit-border-radius: 10px 10px 0px 0px; -moz-border-radius: 10px 10px 0px 0px; 
+border-bottom: solid #480202 3px; }
+
+.header-img { float: left; width: 100%; height: auto; }
+
+#heading { float: left; width: 100%; margin: 4px auto 10px; text-align: center; }
+
+h1 { text-transform: uppercase; font-size: 18px; }
+
+#content { float: left; width: 65%; margin-top: 2%; }
+
+.content-img { width: 98%; padding: 1%; background-image: url(../images/scary_images/bg1600X1200-1.jpg); }
+
+.thumbs { float: left; height: 57px; width: 75px; }
+
+.thumbs img { border: thin solid #FFFFFF; height: 57px; width: 75px; }
+
+.picpr { width: 71%; float: left; }
+#footer-index { width: 751px; height: auto; margin: 10px auto; float: left; box-shadow: 0px 0px 5px 1px #EEC; -webkit-box-shadow: 0px 0px 5px 1px #EEC;
+-moz-box-shadow: 0px 0px 5px 1px #EEC;}
+
+#tags {	text-align: center; width: 65%; float: left; margin-bottom: 10px;}
+
+h2 { font-size: 12px; font-weight: normal; color: #C0C0C0; }
+
+.gradient1 {
+	background: rgba(76,76,76,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 13%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 36%, rgba(44,44,44,1) 43%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 71%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(76,76,76,1)), color-stop(13%, rgba(89,89,89,1)), color-stop(25%, rgba(102,102,102,1)), color-stop(36%, rgba(71,71,71,1)), color-stop(43%, rgba(44,44,44,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(60%, rgba(17,17,17,1)), color-stop(71%, rgba(43,43,43,1)), color-stop(91%, rgba(28,28,28,1)), color-stop(100%, rgba(19,19,19,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 13%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 36%, rgba(44,44,44,1) 43%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 71%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 13%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 36%, rgba(44,44,44,1) 43%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 71%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 13%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 36%, rgba(44,44,44,1) 43%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 71%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+background: radial-gradient(ellipse at center, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 13%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 36%, rgba(44,44,44,1) 43%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 71%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1 );
+}
+
+
+.ad-box, .adbox-728x90 {background-color: #000; box-shadow: 0px 0px 1px 1px #fff; opacity: 0.6; filter: alpha(60%); 
+              -webkit-box-shadow: 0px 0px 1px 1px #fff; -moz-box-shadow: 0px 0px 1px 1px #fff;}
+
+.adspace-right { float:left; width: 35%; margin: 2% auto;}
+#adspace-right2 {width: 29%;}
+.adblock { width: 302px; height: 252px; margin: 10px auto 5px; }
+.ad-box { width: 302px; height: 252px; }
+
+.banner-ad { float:left; width: 100%; }
+.center-block { width: 730px; height: 92px; margin: auto; }
+.adbox-728x90 {width: 730px; height: 92px;}
+
+@media screen and (max-width: 1229px){
+    #adspace-right2 { width: 100%; }
+    #ads-holder2 { width:624px; height: 262px; margin: auto; }
+    #ad3, #ad4 { margin: 5px; float: left; }
+    .picpr { width: 100%; }
+    #footer-index { float: none; }
+}
+
+@media screen and (max-width:980px){
+    #content {width: 100%;}
+    .content-img { width: 100%; }
+    .adspace-right {width: 100%;}
+    .ads-holder {width:624px; height: 262px; margin: auto;}
+    .adblock { margin: 5px; float: left; }
+    #tags {width: 100%;}
+}
+
+@media screen and (max-width:870px){
+    #wrapper {
+        width: 98%;
+	margin-right: 1%;
+	margin-left: 1%;
+    }
+    h1 {font-size: 13px;}
+}
+
+@media screen and (max-width:800px){
+    #footer-index {width: 375px}
+}
+
+@media screen and (max-width:790px){
+    .adbox-728x90, .center-block {width: 470px; height: 62px;}
+}
+
+@media screen and (max-width: 680px){
+    #ad2, #ad4 {display: none;}
+    .adblock { margin: auto; float: none; }
+    .ads-holder, #ads-holder2 { width: 302px; height: 252px; }
+}
+
+@media screen and (max-width: 525px){
+    .adbox-728x90, .center-block {width: 236px;}
+}
+
+@media screen and (max-width:420px){
+    #footer-index {width: 300px}
+    h1 {font-size: 10px;}
+}

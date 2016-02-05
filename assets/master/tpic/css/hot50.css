@@ -1,0 +1,267 @@
+@charset "utf-8";
+body {
+    background-color: #EAEAEA;
+    margin: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Document */
+
+#wrapper {
+    float: left;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    box-shadow: 2px 2px 3px 3px #000000;
+    margin-top: 5px;
+    margin-bottom: 1%;
+}
+#header {
+    background-color: #000;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    width: 100%;
+    height: 40px;
+}
+#header-menu-bar {
+    float: left;
+    width: 98%;
+    margin: 15px auto 15px 1%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+a .header-img-thumb:hover {
+    box-shadow: 1px 0px 1px 1px #666666;
+}
+
+.header-img-thumb {
+    margin:5px 1% 5px auto;
+    box-shadow: 1px 1px 2px 3px #666666;
+    float: left;
+    width: 9%;
+}
+
+#content-panel {
+    float: left;
+    width: 70%;
+}
+#pg-head {
+    float: left;
+    width: 80%;
+    margin-top: 5px;
+    margin-right: 10%;
+    margin-bottom: 5px;
+    margin-left: 10%;
+}
+.banner-ad {
+    float: left;
+    width: 90%;
+    height: 100px;
+    border: 1px dashed #0000FF;
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color: #CCCCFF;
+    text-align: center;
+}
+#content {
+    float: left;
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+figure {
+    padding: 8px;
+}
+
+#menu-bar-right {
+    float: left;
+    width: 30%;
+}
+.ad {
+    background-color: #CCCCFF;
+    float: left;
+    width: 94%;
+    height: 260px;
+    border: 1px dashed #0000FF;
+    margin:15px 3% 15px 3%;
+    text-align: center;
+}
+
+#menu-box1 {
+    float: left;
+    width: 100%;
+}
+.menu-box {
+    width: 100%;
+    border-radius: 9px 9px 0px 0px;
+    -webkit-border-radius: 9px 9px 0px 0px;
+    -moz-border-radius: 9px 9px 0px 0px;
+}
+#menu-box1 ul {
+    display: block;
+}
+#menu-box1 ul li {
+    list-style-type: none;
+}
+#menu-box1 ul li h2 a {
+    float: left;
+    width: 42%;
+    margin: 2%;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 0px #000000;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    background-color: #D5D5D5;
+    padding: 2%;
+}
+
+#menu-box1 ul li h2 a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+
+
+.img-thumb {
+    margin-top: 7px;
+    margin-right: 2%;
+    margin-bottom: 7px;
+    -ms-transition: all;
+    -o-transition: all;
+    vertical-align: middle;
+    box-shadow: 1px 1px 2px 3px #666666;
+    width: 46%;
+    margin-left: 2%;
+}
+
+a .img-thumb:hover {
+    box-shadow: 1px 0px 1px 1px #666666;
+}
+#footer-menu-bar {
+    margin:1%; 
+    float: left;
+    width: 98%;
+    padding-left: 5px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+
+
+
+body,td,th {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #030303;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 3px;
+}
+h3 {
+    font-size: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+h3 a {
+    color: #FFFFFF;
+    font-size: 100%;
+    line-height: 100%;
+}
+.content-image {
+    float: left;
+    width: 100%;
+}
+#tags {
+    float: left;
+    width: 94%;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 10px;
+}
+h2 {
+    font-weight: normal;
+    font-size: 12px;
+    color: #ABABAB;
+}
+
+@media screen and (max-width:767px){
+    h1{
+        font-size: 15px;
+    }
+
+    #menu-bar-right {
+        float: left;
+        width: 100%;
+    }
+
+    #menu-box1 ul li a {
+        width: 21%;
+        margin: 1%;
+        padding: 1%;
+    }
+
+    #content-panel {
+        float: left;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:499px){
+
+    h1{
+        font-size: 14px;
+    }
+
+    #menu-box1 ul li a {
+        width: 42%;
+        margin: 2%;
+        padding: 2%;
+    }
+
+    #header-menu-bar {
+        width: 96%;
+        margin: 15px auto 15px 3%;
+    }
+
+    .header-img-thumb {
+        margin:5px 1% 5px auto;
+        box-shadow: 1px 1px 2px 3px #666666;
+        width: 18%;
+    }
+
+    #footer-menu-bar {
+        margin:15px auto 15px 2%;
+        float: left;
+        width: 98%;
+}
+}

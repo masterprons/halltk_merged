@@ -1,0 +1,160 @@
+/*==================================================================|| BASE ELEMENTS ||=================================================================*/
+
+html { font-family: sans-serif;}
+body {
+    margin: 0px; 
+    padding: 0px;
+    background-color: #1c94c4;
+    background-image: url('http://3.bp.blogspot.com/-dSe4CecRAts/TaHS627VqKI/AAAAAAAACWQ/czsAX2aUkxk/s1600/1920x1080-Blue-Waves-Beach-Wallpaper1080p-HD.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+* {margin:0px; padding:0px; }
+
+/*=====================================================================|| LAYOUT ||=====================================================================*/
+header {
+    background-color: #0052cc;
+    width: 98%;
+    height: auto;
+    padding: 4px 1%;
+    float: left;
+    font-size: 30px;
+    color: #ffccee;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+}
+
+.container {
+    width: 100%;
+    height:auto;
+    float:left;
+}
+section {
+    width: 73%;
+    height: auto;
+    float: left;
+}
+.content {float: left; width: 92%; height: auto; margin: 4px 3%; padding: 1%; background-color: lightblue; box-shadow: 2px 2px 5px 0px #003399;}
+.image-content {width: 100%;}
+.thumb {width:9%; padding: 4px 0.5% 0px 0.5%; float: left; opacity: 0.8;}
+.thumb:hover {
+            opacity: 1; 
+            filter: alpha(opacity=100);
+            -webkit-box-shadow: 0px 0px 25px -3px #000;
+            -moz-box-shadow: 0px 0px 25px -3px #000;
+            box-shadow: 0px 0px 25px -3px #000;
+}
+.ad-space-right {width: 27%; height: auto; float: left;}
+
+.image-collection{
+    float: left; 
+    width: 88%; 
+    padding:1%; 
+    height: auto; 
+    margin: auto 5%; 
+    border: 2px #0052cc double; 
+    background-image: url('../images/bg_light.jpg'); 
+    background-repeat: repeat;
+    -webkit-box-shadow: 0px 0px 30px -3px #000;
+    -moz-box-shadow: 0px 0px 30px -3px #000;
+    box-shadow: 0px 0px 30px -3px #000;
+}
+
+.ad-space{ width: 100%; height: auto; padding: 10px 0px; float: left;}
+
+.image-set {margin: 10px auto; width: 100%; height: auto; padding: 10px auto; box-shadow: 0px 0px 25px -3px red;}
+
+.image-set a img {width: 100%; height: auto; margin:auto; border: 1px #1c94c4 solid;}
+
+.pg_heading{
+    color:#000000;
+    text-align: left;
+    background-color: #ffe5ff;
+    border-left: 5px #FF33CC solid;
+    float: left;
+    width: 98%;
+    height:auto;
+    margin: 0px 0px 12px 0px;
+    padding: 5px 0.5% 5px 0.5%;
+}
+
+.keywords {font-size: 12px; color: #1c94c4; padding: 4px;}
+
+footer {
+    padding: 1%;
+    color: #ffffff;
+    background-color: #0052cc;
+    height: auto;
+    width: 98%;
+    padding: 5px 1%;
+    float: left;
+}
+
+
+/*============================================================|| LAYOUT'S STRUCTURE & DESIGN ||=========================================================*/
+
+/*=====================================================================|| COMPONENTS ||=================================================================*/
+
+/*============================================================|| PRESENTATIONAL ELEMENTS ||=============================================================*/
+article {background-color: lightgray; padding:4px; }
+
+p { color: #000000; margin: 9px; padding: 5px; font-size: 16px;}
+
+h1, h2, h3 {padding:9px; padding: 0px;}
+
+h1 {font-size: 21px;}
+h2 {font-size: 18px; color:#000000;}
+h3 {font-size: 16px; color:#000000;}
+h4 {font-size: 14px; color:#000000;}
+h5 {font-size: 12px; color:#000000;}
+h6 {font-size: 9px; color:#000000;}
+
+a {color:lightblue; text-decoration: none; margin: 25% 0px; padding: 0px; display: inline; color: #ffccee;}
+a:hover {color:white;}
+
+hr {}
+
+
+/*=================================================================|| UTILITY CLASSES ||=================================================================*/
+
+/*POSITIONING*/
+.float-left {float:left;}
+.float-right {float:right;}
+.center{margin-left: auto; margin-right: auto;}
+.border-all{border: 2px #0e7079 ridge; width: auto;}
+
+/*ADVERTISEMENTS*/
+.adbox-728x90, .adbox-300x250 {background-color: #ccf5ff; border: 1px #cccccc outset;}
+.adbox-300x250 {width: 300px; height: 250px; margin: 5px auto;} /* Ad size: 300 x 250*/
+.adbox-728x90 {width: 728px; height: 90px; margin: 5px auto;} /* Ad size: 728 x 90*/
+
+
+/*=================================================================|| BREAKING POINTS ||=================================================================*/
+
+@media screen and (max-width:1150px){
+    .ad-space-right {width: 100%;}
+    .ad-space-manager {width: 32.3333%; padding: 0.5%; float: left;}
+    section {width: 100%;}
+}
+
+@media screen and (max-width:940px){
+    .ad-space-manager {width: 48%; padding: 1%;}
+    #ad3 {display: none;}
+}
+
+@media screen and (max-width:850px){
+    .adbox-728x90 {width: 460px; height:60px;}/* Leader Board ad size converted to Full Banner ad */
+}
+
+@media screen and (max-width:630px){
+    .ad-space-manager {width: 98%; padding: 1%;}
+    .thumb {width:18%; padding: 5px 1%;}
+}
+
+@media screen and (max-width: 540px){
+    .adbox-728x90 {width: 234px; height:60px;}/* Full Banner ad size converted to Half Banner ad */
+}

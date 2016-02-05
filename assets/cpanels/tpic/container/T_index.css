@@ -1,0 +1,23 @@
+/* TPIC Index Container  */
+.tabs li a {background: #FF6699; }
+.tabs a.active {background: #FF1475;}
+.border-black {border-color: #FF1475;}
+ 
+@media screen and (max-width:980px){
+    .galleries {width: 25%;}
+    #sec-1 {width: 100%;}
+    .leader-board {width: 90%; margin: auto 5%; height: 60px;}
+}
+@media screen and (max-width:770px){
+    .galleries {width: 33.33%;}
+}
+@media screen and (max-width:601px){
+    .galleries {width: 50%;}
+}
+@media screen and (max-width:435px){
+    .galleries {width: 100%;}
+}
+
+/* TPIC Index Left  */
+
+/* TPIC Index Right  */

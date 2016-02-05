@@ -1,0 +1,30 @@
+/* HALLTK Index Container  */
+
+@media screen and (max-width:1100px){
+    .img-4, .text-group1 {width: 50%; margin-bottom: 10px;}
+}
+@media screen and (max-width:999px){
+    #img-pr {width: 40%;}
+}
+@media screen and (max-width:700px){
+    #img-pr, #img-web, .img-4 {width: 100%; margin-bottom: 10px;}
+    .img-4, .img-4 img, .img-4 div {height: auto;}
+}
+@media screen and (max-width:600px){
+    section {width: 100% !important;}
+    .img-4 {width: 50%; margin-bottom: 10px;}
+    .img-4 img {height: 80%;}
+    .img-4 div:first-child {height: 160px;}
+    .text-group1 {width: 100%;}
+
+}
+@media only screen and (max-width:400px){
+    #img-pr, #img-web, .img-4 {width: 100%; margin-bottom: 10px !important;}
+    .img-4, .img-4 img, .img-4 div {height: auto !important;}
+}
+
+/* HALLTK Index Left  */
+
+
+/* HALLTK Index Right  */
+

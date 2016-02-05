@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #FFCCFF;
+}
+body,td,th {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    background-color: #FFCCFF;
+    float: left;
+    width: 90%;
+    margin-top: 25px;
+    margin-right: 5%;
+    margin-bottom: 25px;
+    margin-left: 5%;
+    box-shadow: 0px 0px 7px 5px #940367;
+}
+#header {
+    background-color: #FF33CC;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    width: 100%;
+    border-bottom-width: 2px;
+    border-bottom-style: double;
+    border-bottom-color: #000000;
+}
+#content-panel {
+    float: left;
+    width: 55%;
+}
+#right-side-bar {
+    float: left;
+    width: 44%;
+    margin-top: 40px;
+}
+
+
+.center-all{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thumb {
+    float: left;
+    width: 18%;
+    //margin-right: 2%;
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px 1px #0033FF;
+    //margin-top: 9px;
+    //margin-bottom: 9px;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+    margin:1%;
+}
+a .thumb:active {
+    opacity: 100%;
+    filter:alpha(opacity=100%);
+}
+
+a .thumb:hover {
+    float: left;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px 1px #000000;
+    opacity: 100;
+    filter:alpha(opacity=100);
+}
+
+
+h3, h3 a {
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#pg-head {
+    float: left;
+    width: 98%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+h1 {
+    font-size: 21px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#content-image {
+    width: 98%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;}
+.image {
+    float: left;
+    width: 94%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    background-color: #FF0066;
+    text-align: center;
+    vertical-align: middle;
+}
+h2 {
+    font-size: 12px;
+    font-weight: normal;
+    color: #FF3399;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+#tags {
+    color: #FF3399;
+    float: left;
+    width: 98%;
+    margin-top: 5px;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+@media only screen and (max-width:767px){
+    h3, h3 a {
+        font-size: 30px;
+    }
+    h1{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:1000px){
+    #content-panel {
+        float: left;
+        width: 100%;
+    }
+    
+    #right-side-bar {
+	width: 98%;
+        margin-top: 7px;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 7px;
+    }
+    
+    #wrapper {
+	width: 96%;
+	margin-top: 10px;
+	margin-right: 2%;
+	margin-bottom: 10px;
+	margin-left: 2%;
+    }
+}

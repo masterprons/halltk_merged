@@ -1,0 +1,77 @@
+/*====================================================================|| Template Design ||============================================================*/
+
+footer, .footer-content {width: 100%;}
+.logo, nav, .left, .left-collapse, .left-content, .right-collapse, .right-content, .footer-collapse, .footer-content, .footer-content {float: left;}
+.left-content, .footer-content {display: none;}
+nav, .right-collapse, .right-content, .footer-collapse, nav ul {display: block;}
+.left, .right, footer {position: fixed;}
+.logo, nav, .right-collapse, .right-content, .footer-collapse, .footer-content, .footer-content {height: auto;}
+footer, .right-collapse, .left-collapse, .footer-collapse {background-color: #D4AF37;}
+.right-content, .footer-content, .left-content {background-color: #EDD246;}
+
+header {width: 100%; position: fixed; height: 52px; background-color: #D4AF37;}
+.logo {width: 100px; margin: 0px 2% 0px 0px;}
+.logo img {width: 100px; height: auto;}
+span {cursor: pointer;}
+
+nav {width: 583px; height: auto; float: right;}
+nav ul {float: right;}
+nav ul li {float: left; list-style-type: none; display: inline;}
+nav ul li a {width: auto; height: auto; float: left; color: #fff; padding: 13px 15px; font-size: 20px; text-transform: uppercase; text-decoration: none; 
+            transition-duration: 0.4s; -webkit-transition-duration: 0.2s;}
+nav ul li a h2 {font-size: 16px; display: inline; padding: 0px; font-weight: lighter;}
+nav ul li a:hover {background-color: #d0a80a; box-shadow: inset 0px 8px 6px 0px #EDD246; -webkit-box-shadow: inset 0px 8px 6px 0px #EDD246;
+                   -moz-box-shadow: inset 0px 8px 6px 0px #EDD246;}
+
+@media screen and (max-width:800px){
+    span {display: inline-block;}
+    nav {display:none}
+    nav {position: absolute; top: 52px; right: 0px; width: 250px; height: auto; background-color: #D4AF37; border:solid 2px yellow;}
+    nav ul {width: 100%;}
+    nav ul li, nav ul li a {display: block; width: 100%;}
+}
+@media screen and (min-width:801px){
+    span {display: none;}
+    nav {display:block !important;}
+}
+
+.left {width: auto; height: 100%; left: 0px; top: 52px; bottom: 21px;}
+.right {width: auto; height: 100%; right: 0px; top: 52px; bottom: 21px;}
+.right-collapse, .left-collapse {height: 100%; width: 20px; padding-top: 250px; padding-left: 3px; cursor: pointer;}
+.right-content, .left-content {width:320px; height: 100%; padding: 8px; overflow: auto;}
+
+@media only screen and (max-width:400px){
+    .left-content, .right-content {width: 200px;}
+    .right-collapse, .left-collapse {padding-top: 190px;}
+}
+
+footer {bottom: 0px; left: 0px; }
+.footer-collapse {width: 100%; height: 20px; padding-left: 50%; padding-top: 2px; cursor: pointer;}
+
+
+/*=========================================================|| CUSTOM CONTAINER - BREAKING POINTS ||===================================================*/
+/* HALLTK Container Index1 */
+
+@media screen and (max-width:1100px){
+    .img-4, .text-group1 {width: 50%; margin-bottom: 10px;}
+}
+@media screen and (max-width:999px){
+    #img-pr {width: 40%;}
+}
+
+@media screen and (max-width:700px){
+    #img-pr, #img-web, .img-4 {width: 100%; margin-bottom: 10px;}
+    .img-4, .img-4 img, .img-4 div {height: auto;}
+}
+@media screen and (max-width:600px){
+    section {width: 100% !important;}
+    .img-4 {width: 50%; margin-bottom: 10px;}
+    .img-4 img {height: 80%;}
+    .img-4 div:first-child {height: 160px;}
+    .text-group1 {width: 100%;}
+
+}
+@media only screen and (max-width:400px){
+    #img-pr, #img-web, .img-4 {width: 100%; margin-bottom: 10px !important;}
+    .img-4, .img-4 img, .img-4 div {height: auto !important;}
+}

@@ -1,0 +1,55 @@
+/*====================================================================|| BASE ELEMENTS ||==============================================================*/
+html {font-family: arial, sans-serif;}
+html, body {height: 100%; min-height: auto;}
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+h1, h2, h3 {font-weight: bold;}
+h1 {padding: 5px; font-size: 25px;}
+h2 {padding: 10px;}
+h3 {padding: 9px 0px; font-size: 16px;}
+p {font-size: 16px; line-height: 22px}
+a {text-decoration: none; color: #000;}
+
+/*====================================================================================================================================================*/
+/*======================================================================|| LAYOUT BASE ||=============================================================*/
+
+/*==================================|| COMMON ||*/
+header, .container {width: 100%;}
+.left, .right {position: fixed; top: 40px; background-color: lightblue; padding: 9px; height: 100%; width: 320px;}
+
+/*==================================|| HEADER ||*/
+header {height: 40px; background-color: yellow; position: fixed; top: 0px;}
+
+/*===|| Header : COMMMON ||===*/
+.pr, .portfolio {width: 100px;}
+/*===|| Header : Content ||===*/
+.pr {float: left;}
+header h1 {display: inline-block;}
+.portfolio {float: right;}
+
+/*====================================|| LEFT ||*/
+.left {left: 0px;}
+
+/*===|| Left : COMMMON ||===*/
+
+/*===|| Left : Content ||===*/
+
+/*===============================|| CONTAINER ||*/
+.container {float: left; background-color: gray; height: 500px;  padding: 25px; margin-top: 40px;}
+
+/*===================================|| RIGHT ||*/
+.right {right: 0px; display: none;}
+
+/*===|| Right : COMMMON ||===*/
+
+/*===|| Right : Content ||===*/
+
+
+/*====================================================================================================================================================*/
+/*======================================================================|| CONTAINERS ||==============================================================*/
+
+
+
+/*====================================================================|| BREAKING POINTS ||===========================================================*/
+
+
+/*=====================================================================|| UTILITY CLASS ||============================================================*/
